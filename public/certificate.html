@@ -16,10 +16,22 @@
     <img src="images.png" alt="" class="mx-auto"><br>
    <div class="flex-auto">
     <input type="text" placeholder="Enter Certificate ID to View" class="border-2 text-center">
-    <button class="border-2 bg-blue-400 w-20 ">Search</button>
+    <button class="border-2 bg-blue-400 w-20 " onclick="redirectapp()">Search</button>
    </div> 
 </div>
+<script>
+    function redirectapp(){
+        const certiID=document.getElementById('CertiID').value;
 
+        const url=`/certificate/${certiID}`;
+
+        console.log(certiID);
+
+        console.log(url);
+
+        window.location.href=url;
+    }
+</script>
     
 </body>
 </html>

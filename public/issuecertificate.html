@@ -15,7 +15,15 @@
      <h2 class="mt-20 text-3xl font-bold mx-auto">Certificate Dapp</h2><br>
      <div style="background-color: white;">
          <h4 class="mt-2 text-xl">Issue new Certificate</h4><br>
-         Select Course*
+         <form action="/certificate" method="post">
+            <input type="text" name="Course" placeholder="Course" required><br>
+            <input type="text" name="CertiID" placeholder="Certificate ID" required><br>
+            <input type="text" name="name" placeholder="Name" required><br>
+            <input type="text" name="grade" placeholder="Grade" required><br>
+            <input type="date" name="date" required><br>
+            <a href="issued.html"><button type="submit">Issue Certificate</button></a>
+         </form>
+         <!-- Select Course*
          <select name="Course" class="border-2">
              <option value="">Blockchain Architect Program</option>
              <option value="">Cyber Security</option>
@@ -36,12 +44,12 @@
       Issue Date*
         <input type="date" class="border-2"><br>
      <br> <br>  
-     <div>
-         <button class="border-4 bg-blue-400"><a href="issued.html">
+     <div> -->
+         <!-- <button class="border-4 bg-blue-400"><a href="issued.html">
              submit
-            </button></a>
+            </button></a> -->
      </div>
-     </div>
+     <!-- </div> -->
  
     
 </body>
